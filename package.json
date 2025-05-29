@@ -1,0 +1,54 @@
+{
+  "name": "agent2agent-demo",
+  "version": "1.0.0",
+  "description": "Sistema demo con due agenti che comunicano tramite protocollo A2A di Google",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/basic-agents/index.js",
+    "start:basic": "node src/basic-agents/index.js",
+    "start:server": "node src/basic-agents/agent-server.js",
+    "start:client": "node src/basic-agents/agent-client.js",
+    "start:multi-system": "node src/basic-agents/multi-agent-system.js",
+    "start:multi-client": "node src/basic-agents/multi-agent-client.js",
+    "start:agent1": "node src/basic-agents/agent1-server.js",
+    "start:agent2": "node src/basic-agents/agent2-server.js",
+    "start:agent3": "node src/basic-agents/agent3-server.js",
+    "start:simple-text": "node src/simple-text-agent.js",
+    "start:simple-sentiment": "node src/simple-sentiment-agent.js",
+    "start:discovery-system": "node src/dynamic-discovery/discovery-system.js",
+    "start:discovery-client": "node src/dynamic-discovery/discovery-client.js",
+    "start:agent-a": "node src/dynamic-discovery/agent-a-server.js",
+    "start:agent-b": "node src/dynamic-discovery/agent-b-server.js",
+    "start:agent-c": "node src/dynamic-discovery/agent-c-server.js",
+    "start:agent-d": "node src/dynamic-discovery/agent-d-server.js",
+    "start:agent-e": "node src/dynamic-discovery/agent-e-server.js",
+    "start:monitoring": "node src/dynamic-discovery/monitoring-dashboard.js",
+    "start:orchestrator": "node src/dynamic-discovery/advanced-orchestrator.js",
+    "test:agent-e": "node test-agent-e.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "jest --watch",
+    "dev": "nodemon src/basic-agents/agent-server.js"
+  },
+  "keywords": [
+    "agent2agent",
+    "a2a",
+    "google",
+    "ai",
+    "agents"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^7.1.1"
+  }
+}
